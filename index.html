@@ -4,38 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Short Story Idea Gernerator</title>
-    <style>
-      body {
-        background-color: rgb(236, 218, 252);
-      }
-
-      h1 {
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-        text-align: center;
-        text-decoration: underline;
-      }
-
-      h2 {
-        text-align: center;
-        font-weight: 500;
-      }
-
-      footer {
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Welcome to your Short Story Idea Gernerator</h1>
+    <h1>Welcome to AI Short Story Idea Gernerator</h1>
     <h2>Let's Start having some Ideas!</h2>
+    <main>
+      <select value="genre">
+        <option value=" ">Select a Genre</option>
+        <option>Young Adult Fiction</option>
+        <option>Dystopian</option>
+        <option>Fantasy</option>
+        <option>Sci-Fiction</option>
+      </select>
+      <form>
+        <div>
+          <label>What POV do you write in?</label>
+          <input type="radio" name="POV" id="no-preference" />
+          <label for="no-preference" selected>No Preference</label>
+          <input type="radio" name="POV" id="1st-person" required />
+          <label for="1st-person">1st Person</label>
+          <input type="radio" name="POV" id="2nd-person" />
+          <label for="2nd-person" selected>2nd Person</label>
+          <input type="radio" name="POV" id="1st-person" required />
+          <label for="3rd-person">3rd Person</label>
+        </div>
+        <div><input type="submit" required /></div>
+      </form>
+      <div>Story Ideas:</div>
+      <div></div>
+    </main>
     <footer>
       This AI project was coded by
       <a href="https://github.com/Niki-Nicoli" target="_blank">Nikilia Clark</a
-      >, and
-      <a href="https://github.com/Niki-Nicoli/Short-Story-Ideas" target="_blank"
-        >open-sourced on GitHub</a
+      >, and is
+      <a
+        href="https://github.com/Niki-Nicoli/Short-Story-Idea-Generator"
+        target="_blank"
+        >open soured on GitHub</a
       >
-      and hosted on Netlify.
+      and is
+      <a href="short-story-ideas.netlify.app" target="_blank"
+        >hosted on Netlify</a
+      >
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
