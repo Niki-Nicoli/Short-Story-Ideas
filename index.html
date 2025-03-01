@@ -5,52 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Short Story Idea Gernerator</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <h1>Welcome to AI Short Story Idea Gernerator</h1>
     <div class="container">
       <h2>Let's Start having some Ideas!</h2>
       <header>
-        <select class="genre-selection" value="genre">
-          <option value=" ">Select a Genre</option>
-          <option>Young Adult Fiction</option>
-          <option>Dystopian</option>
-          <option>Fantasy</option>
-          <option>Sci-Fiction</option>
-        </select>
-        <form>
+     
+     <div >
+        <form id="POV">
+          
           <div class="writing-pov">
             <label>What POV do you write in?</label>
-          </div>
+                    </div>
+
           <div class="point-of-view">
             <div>
-              <input type="radio" name="POV" id="no-preference" />
-              <label for="no-preference">No Preference</label>
+              <input type="radio" name="POV" value="no preference" />
+              <label for="no preference">No Preference</label>
             </div>
+
             <div>
-              <input type="radio" name="POV" id="1st-person" required />
-              <label for="1st-person">1st Person</label>
+              <input type="radio" name="POV" value="1st person" required />
+              <label for="1st person">1st Person</label>
             </div>
+
             <div>
-              <input type="radio" name="POV" id="2nd-person" />
-              <label for="2nd-person" selected>2nd Person</label>
+              <input type="radio" name="POV" value="2nd person" />
+              <label for="2nd person" selected>2nd Person</label>
             </div>
+
             <div>
-              <input type="radio" name="POV" id="3rd-person" required />
-              <label for="3rd-person">3rd Person</label>
-            </div>
-          </div>
-        </form>
-        <form>
-          <div class="submit"><input type="submit" required /></div>
-        </form>
+              <input type="radio" name="POV" value="3rd person" required />
+              <label for="3rd person">3rd Person</label>
+            </div></div>
+            </form></div>
+                             
+    <br />
+            <p class="writing-pov" id="point-of-view"></p>
+
+            <br>
+        <select
+          class="genre-selection"
+          id="genre-selection"
+          value="genre"
+          required
+        >
+          <option value=" " id="select-a-genre">Select a Genre</option>
+          <option value="Young Adult Fiction" id="fictionYA">
+            Young Adult Fiction
+          </option>
+          <option value="Dystopian" id="dystopian">Dystopian</option>
+          <option value="Fantasy" id="fantasy">Fantasy</option>
+          <option value="Science Fiction" id="sci-fi">Sci-Fiction</option>
+        </select>
       </header>
       <br />
       <main>
-        <p>Story Ideas:</p>
+        <h4>Story Ideas:</h4>
+        <p id="results"></p>
+    
         <div></div>
       </main>
-    </div>
+    </div></div>
     <footer>
       This AI project was coded by
       <a href="https://github.com/Niki-Nicoli" target="_blank">Nikilia Clark</a
@@ -59,10 +77,10 @@
         >open soured on GitHub</a
       >
       and is
-      <a href="short-story-ideas.netlify.app" target="_blank"
+      <a href="https://short-story-ideas.netlify.app/" target="_blank"
         >hosted on Netlify</a
       >
     </footer>
-    <script src="index.js"></script>
+    <script src="styles.js"></script>
   </body>
 </html>
