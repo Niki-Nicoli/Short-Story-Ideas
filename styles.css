@@ -32,9 +32,10 @@ h2 {
 }
 
 .writing-pov {
+  font-size: 20px;
   margin-top: 50px;
   text-align: center;
-  font-weight: bold;
+  padding-bottom: 10px;
 }
 .point-of-view {
   display: flex;
@@ -50,8 +51,16 @@ h2 {
   margin: 20px auto;
 }
 
+.POV {
+  margin-left: 320px;
+  margin-right: 320px;
+  font-weight: bold;
+}
+
 p {
+  text-align: justify;
   margin-left: 100px;
+  margin-right: 100px;
 }
 
 footer {
